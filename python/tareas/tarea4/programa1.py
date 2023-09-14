@@ -1,11 +1,8 @@
 import random
 
 operacion =random.randint( 1,5)
-simbolo = ""
-numero = random.randint( 0,100)
-numero2 = random.randint( 0,100)
-
-#suma
+numero = 0
+numero2 = 0
 operacion =random.randint( 1,5)
 
 
