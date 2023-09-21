@@ -16,8 +16,7 @@ while (n <= asteriscos):
     elif(not(n == lineas) or not(n ==1)):
         renglonString=(" " * int(lineas -1)+"*"+ " " * int(((n -1)*2 )-1 )+ "*")
         print(renglonString)
- 
-
-    
+        
+       
     n = n+1     
     lineas = lineas - 1
