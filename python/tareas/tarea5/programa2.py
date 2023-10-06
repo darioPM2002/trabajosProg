@@ -1,32 +1,42 @@
-oracion = "hola como estas tu"
+oracion = input("Ingrese oracion: ")
 
-print("digit: ", oracion.isdigit)
+
 
 espacios =0
 letras = 0
 
 letrasInverasas=[]
 numeroLetras = len(oracion)
-oracionList = list(oracion)
+oracionList = list((oracion.lower()))
 oracionListInversa = []
 listaVocales= []
 listaConsonantes = []
+numeros = 0
 
-
-for i in oracion:
+for i in oracionList:
     
     letras += 1
     if i == " ":
         espacios += 1
-    elif oracionList[numeroLetras-1] == "a"  or oracionList[numeroLetras-1] ==  "e" or oracionList[numeroLetras-1] == "i" or oracionList[numeroLetras-1] == "o" or oracionList[numeroLetras-1] == "u":
-     
-        listaVocales.append(oracionList[numeroLetras-1])   
-  #  elif oracionList[numeroLetras-1] != "a"  or oracionList[numeroLetras-1] !=  "e" or oracionList[numeroLetras-1] != "i" or oracionList[numeroLetras-1] != "o" or oracionList[numeroLetras-1] != "u" or oracionList[numeroLetras-1] != " ":   
-  #      listaConsonantes.append(oracionList[numeroLetras-1])    
+    if oracionList[letras-1] == "1"  or oracionList[letras-1] ==  "2" or oracionList[letras-1] == "3" or oracionList[letras-1] == "4" or oracionList[letras-1] == "5" or oracionList[letras-1] == "6" or oracionList[letras-1] == "7" or oracionList[letras-1] == "8" or oracionList[letras-1] == "9" or oracionList[letras-1] == "0":  
+        numeros += 1
+    else:    
+        if oracionList[letras-1] == "a"  or oracionList[letras-1] ==  "e" or oracionList[letras-1] == "i" or oracionList[letras-1] == "o" or oracionList[letras-1] == "u":
+            listaVocales.append(oracionList[letras-1])
+        else:
+            listaConsonantes.append(oracionList[letras-1])
+        
+    oracionListInversa.append(oracionList[numeroLetras-1])
     numeroLetras -= 1
+   
+print("tu oracion es la siguiente: ", oracion)
+print("numero de caracteres:", letras)
+print("numero de letras:", letras-espacios-numeros)
+print("numero de espacios:", espacios)
+print("numero total de numeros:", numeros)
+print("lista vocales:", *listaVocales)
+print("lista consonantes:", *listaConsonantes)
+print("oracion orden inversa",*oracionListInversa)
 
-print(oracionListInversa)
-print("letras:", letras)
-print("espacios:", espacios)
-print("lista vocales:", listaVocales)
-print("lista consonantes:", listaConsonantes)
+
+
