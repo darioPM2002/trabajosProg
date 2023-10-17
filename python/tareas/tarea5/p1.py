@@ -35,4 +35,4 @@ for i in range(5):
     resultado = numeros[i] / numerosDivision[i]
     numerosResultadosDivision.append(round(resultado, 2))
 
-print(numerosResultadosDivision)    
+print("lista numeros divididos alleatoriamente:",numerosResultadosDivision)    

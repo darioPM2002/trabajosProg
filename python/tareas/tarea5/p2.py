@@ -1,7 +1,4 @@
-oracion = input("Ingrese oracion: ")
-
-
-
+oracion = input("Ingrese oracion:")
 espacios =0
 letras = 0
 
