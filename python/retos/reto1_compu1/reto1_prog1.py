@@ -15,6 +15,7 @@ noMultiplos3= []
 #Creacion de la matriz
 
 def crearMatriz(a,b):
+    matriz = []
     for x in range(a):
         listaLit = []
         for y in range(b):
