@@ -10,11 +10,12 @@ class Busquedas{
 public:
 using FuncionBusqueda = std::function<int(std::vector<T>, T)>; 
 static int busquedaSecuencial(std::vector<T>, T);
-static int busquedaBinaria(std::vector<T>, T);
+static int busquedaBinariaA(std::vector<T>, T);
 static void hacerBusquedas(std::vector<T> e, T , FuncionBusqueda );
 static int busquedaBinaria(std::vector<T>, T, int, int);
-private:
 
+
+private:
 };
 
 
@@ -36,7 +37,7 @@ return encontrado;
 
 template <class T>
 
-int Busquedas<T>::busquedaBinaria(std::vector<T> e, T valor)
+int Busquedas<T>::busquedaBinariaA(std::vector<T> e, T valor)
 {
    int size = (int) e.size() - 1;
     
@@ -48,7 +49,7 @@ void Busquedas<T>::hacerBusquedas(std::vector<T> e, T valorBuscado, FuncionBusqu
     int resultado = metodoBusqueda(e, valorBuscado); 
         
     if (resultado != -1) {
-        std::cout << "Valor encontrado en la posición: " << resultado << std::endl;
+        std::cout << "Valor encontrado en la posicion: " << resultado << std::endl;
     } else {
         std::cout << "Valor no encontrado." << std::endl;
     }
@@ -74,5 +75,7 @@ int Busquedas<T>::busquedaBinaria(std::vector<T> e, T valor, int inferior, int s
             return busquedaBinaria(e, valor, mitad + 1, superior);
     }
 }
+
+
 
 #endif // Busquedas_HPP
