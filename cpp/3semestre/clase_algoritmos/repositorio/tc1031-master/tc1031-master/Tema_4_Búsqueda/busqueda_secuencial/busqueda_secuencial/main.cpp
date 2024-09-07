@@ -115,7 +115,7 @@ int main(int argc, const char * argv[]) {
     //buscar<int>(genera_int, Busqueda<int>::busquedaSecuencial);
     
     /* Búsqueda binaria de números punto flotante */
-    //buscar<float>(genera_float, Busqueda<float>::busquedaBinaria, true);
+    buscar<float>(genera_float, Busqueda<float>::busquedaBinaria, true);
     
     /* Búsqueda binaria sobre un objeto definido */
     /* TODO */
