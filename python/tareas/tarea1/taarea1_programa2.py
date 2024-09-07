@@ -7,8 +7,8 @@ articulos_comprar = int(input("Ingresa número de artículos a comprar"))
 
 print("Vas a comprar: " + str(articulos_comprar), "artículos a un precio de " + str(precio_unitario)+"$" )
 
-
-#CALCULOS
+ 
+#CALCULOSd
 precio_antes_impuestos = articulos_comprar * precio_unitario
 precio_final = precio_antes_impuestos + precio_antes_impuestos* impuestos_compra
 ("--------------------------------------------------------")

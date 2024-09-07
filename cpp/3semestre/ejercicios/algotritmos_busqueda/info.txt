@@ -1,0 +1,13 @@
+Hay dos tipos de algoritmos básicos de busqueda:
+Secuencial
+Binaria
+
+Compilacion por consola:
+
+comando             //-o nombre_ejecutable es para que el ejecutble tenga otro nombre diferente a a.out
+                    // --std=c++14 es para especificar la version de c++ con la que quieres compilar
+//g++ nombre_del_main -o nombre_ejecutable --std=c++14
+//g++ main.cpp
+
+en windows comando paramedir el tiempo de ejecucion de un nombre_ejecutable
+Measure-Command {start-process nombre_ejecutable output} 
