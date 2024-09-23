@@ -1,0 +1,28 @@
+
+
+los steristicos unicamentes es para indicar que esa declaración es una dirección de memoria
+int *pun;
+
+
+para asignar el valor de memoria tenemos que obtener la dirección a la que queremos que hacer referecnia
+
+int variable=10;  sin el new utilizamos el espacio de memoria 
+
+asi tenemos que hacer referencia con &
+
+p= &variable;
+
+apuntador genpérico podiemos asignar cualquier tipo de valor
+
+void *r;
+
+los valores de los apuntadores sólo se pueden sumar o restar UNICAMENTE
+
+asignar memeoria
+
+int *i = new int;  con new significa que no ocupamos el espacio de memorria automática
+int *i = new int(25);  aqui reservamos el espacio y asignamos que va valer 25
+
+si vas a signar memeora DEBES LIBERAR
+
+delete i;

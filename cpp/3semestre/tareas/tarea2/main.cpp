@@ -5,12 +5,7 @@
 #include "Ordenamiento.hpp"
 #include <functional>
 #include <algorithm>
-    std::vector<int> n10=  crea_vector(genera_int, 10);
-    std::vector<int> n100=  crea_vector(genera_int, 100);
-    std::vector<int> n1000=  crea_vector(genera_int, 1000);
-    std::vector<int> n10000=  crea_vector(genera_int, 10000);
-    std::vector<int> n100000=  crea_vector(genera_int, 100000);
-    std::vector<int> n1000000=  crea_vector(genera_int, 1000000);
+
 
 int genera_int()
 {
@@ -30,6 +25,12 @@ std::vector<T> crea_vector(T(* genera)(), int n)
     
     return elementos;
 }
+    std::vector<int> n10=  crea_vector(genera_int, 10);
+    std::vector<int> n100=  crea_vector(genera_int, 100);
+    std::vector<int> n1000=  crea_vector(genera_int, 1000);
+    std::vector<int> n10000=  crea_vector(genera_int, 10000);
+    std::vector<int> n100000=  crea_vector(genera_int, 100000);
+    std::vector<int> n1000000=  crea_vector(genera_int, 1000000);
 
 void hacerBusquedaBinaria (){
 
@@ -242,7 +243,7 @@ int main(int argc, char const *argv[])
 {
     hacerBusquedaBinaria();
     hacerBusquedaSecuencial();  
-    hacerOrde();
+    hacerOrdeInsercion();
     /* code */
     return 0;
 }
